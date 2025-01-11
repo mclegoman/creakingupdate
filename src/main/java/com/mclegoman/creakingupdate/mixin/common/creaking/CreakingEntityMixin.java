@@ -2,6 +2,15 @@ package com.mclegoman.creakingupdate.mixin.common.creaking;
 
 import com.mclegoman.creakingupdate.common.block.BlockRegistry;
 import com.mclegoman.creakingupdate.common.block.creaking_heart.CreakingVariantHeartBlockEntity;
+import com.mclegoman.creakingupdate.common.block.creaking_heart.acacia.AcaciaCreakingHeartBlockEntity;
+import com.mclegoman.creakingupdate.common.block.creaking_heart.bamboo.BambooCreakingHeartBlockEntity;
+import com.mclegoman.creakingupdate.common.block.creaking_heart.birch.BirchCreakingHeartBlockEntity;
+import com.mclegoman.creakingupdate.common.block.creaking_heart.cherry.CherryCreakingHeartBlockEntity;
+import com.mclegoman.creakingupdate.common.block.creaking_heart.dark_oak.DarkOakCreakingHeartBlockEntity;
+import com.mclegoman.creakingupdate.common.block.creaking_heart.jungle.JungleCreakingHeartBlockEntity;
+import com.mclegoman.creakingupdate.common.block.creaking_heart.mangrove.MangroveCreakingHeartBlockEntity;
+import com.mclegoman.creakingupdate.common.block.creaking_heart.oak.OakCreakingHeartBlockEntity;
+import com.mclegoman.creakingupdate.common.block.creaking_heart.spruce.SpruceCreakingHeartBlockEntity;
 import com.mclegoman.creakingupdate.common.entity.CreakingVariant;
 import com.mclegoman.creakingupdate.common.entity.CreakingVariantComponent;
 import net.minecraft.block.BlockState;
@@ -60,7 +69,47 @@ public abstract class CreakingEntityMixin extends HostileEntity implements Creak
 				Entity entity = source.getSource();
 				if (entity instanceof LivingEntity || entity instanceof ProjectileEntity || playerEntity != null) {
 					BlockEntity var8 = this.getWorld().getBlockEntity(blockPos);
-					if (var8 instanceof CreakingVariantHeartBlockEntity blockEntity) {
+					if ((var8 instanceof OakCreakingHeartBlockEntity blockEntity)) {
+						if (blockEntity.isPuppet((CreakingEntity) (Object)this)) {
+							if (playerEntity != null) blockEntity.onPuppetDamage();
+							this.playHurtSound(source);
+						}
+					} else if ((var8 instanceof SpruceCreakingHeartBlockEntity blockEntity)) {
+						if (blockEntity.isPuppet((CreakingEntity) (Object)this)) {
+							if (playerEntity != null) blockEntity.onPuppetDamage();
+							this.playHurtSound(source);
+						}
+					} else if ((var8 instanceof BirchCreakingHeartBlockEntity blockEntity)) {
+						if (blockEntity.isPuppet((CreakingEntity) (Object)this)) {
+							if (playerEntity != null) blockEntity.onPuppetDamage();
+							this.playHurtSound(source);
+						}
+					} else if ((var8 instanceof AcaciaCreakingHeartBlockEntity blockEntity)) {
+						if (blockEntity.isPuppet((CreakingEntity) (Object)this)) {
+							if (playerEntity != null) blockEntity.onPuppetDamage();
+							this.playHurtSound(source);
+						}
+					} else if ((var8 instanceof BambooCreakingHeartBlockEntity blockEntity)) {
+						if (blockEntity.isPuppet((CreakingEntity) (Object)this)) {
+							if (playerEntity != null) blockEntity.onPuppetDamage();
+							this.playHurtSound(source);
+						}
+					} else if ((var8 instanceof CherryCreakingHeartBlockEntity blockEntity)) {
+						if (blockEntity.isPuppet((CreakingEntity) (Object)this)) {
+							if (playerEntity != null) blockEntity.onPuppetDamage();
+							this.playHurtSound(source);
+						}
+					} else if ((var8 instanceof DarkOakCreakingHeartBlockEntity blockEntity)) {
+						if (blockEntity.isPuppet((CreakingEntity) (Object)this)) {
+							if (playerEntity != null) blockEntity.onPuppetDamage();
+							this.playHurtSound(source);
+						}
+					} else if ((var8 instanceof JungleCreakingHeartBlockEntity blockEntity)) {
+						if (blockEntity.isPuppet((CreakingEntity) (Object)this)) {
+							if (playerEntity != null) blockEntity.onPuppetDamage();
+							this.playHurtSound(source);
+						}
+					} else if ((var8 instanceof MangroveCreakingHeartBlockEntity blockEntity)) {
 						if (blockEntity.isPuppet((CreakingEntity) (Object)this)) {
 							if (playerEntity != null) blockEntity.onPuppetDamage();
 							this.playHurtSound(source);
