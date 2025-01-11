@@ -1,0 +1,7 @@
+{
+	"parent": "minecraft:block/cube_column_horizontal",
+	"textures": {
+		"end": "creakingupdate:block/jungle_creaking_heart_top",
+		"side": "creakingupdate:block/jungle_creaking_heart"
+	}
+}

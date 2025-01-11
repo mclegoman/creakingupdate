@@ -1,0 +1,18 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "misc",
+	"group": "creaking_heart",
+	"key": {
+		"L": "minecraft:acacia_log",
+		"R": "minecraft:resin_block"
+	},
+	"pattern": [
+		" L ",
+		" R ",
+		" L "
+	],
+	"result": {
+		"count": 1,
+		"id": "creakingupdate:acacia_creaking_heart"
+	}
+}
