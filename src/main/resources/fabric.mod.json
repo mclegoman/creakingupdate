@@ -1,0 +1,36 @@
+{
+	"schemaVersion": 1,
+	"id": "creakingupdate",
+	"version": "${version}",
+	"name": "The Creakening",
+	"description": "Adds creaking variants for all overworld tree types, and allows for creaking spawns no matter the time.",
+	"authors": [
+		"dannytaylor"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/creakingupdate",
+		"sources": "https://github.com/mclegoman/creakingupdate",
+		"issues": "https://github.com/mclegoman/creakingupdate/issues"
+	},
+	"license": [
+		"LGPL-3.0-or-later"
+	],
+	"icon": "assets/creakingupdate/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.mclegoman.creakingupdate.common.CreakingUpdate"
+		],
+		"client": [
+			"com.mclegoman.creakingupdate.client.CreakingUpdateClient"
+		]
+	},
+	"mixins": [
+		"dt-creakingupdate.mixins.json"
+	],
+	"depends": {
+		"fabricloader": "*",
+		"minecraft": "~1.21.4",
+		"java": ">=21"
+	}
+}
